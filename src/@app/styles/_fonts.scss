@@ -1,18 +1,28 @@
 @import 'mixins';
 
-// NT Somic: 400 & 500 & 700
+// Inter: 400 & 500 & 700
 @include font-face(
-  $name: 'NT Somic',
-  $weight: 400,
-  $woff2: '/assets/fonts/NTSomic-Regular.woff2'
+  $name: 'Inter',
+  $weight: 800,
+  $woff: '/assets/fonts/Inter-ExtraBold.woff'
 );
 @include font-face(
-  $name: 'NT Somic',
-  $weight: 500,
-  $woff2: '/assets/fonts/NTSomic-Medium.woff2'
-);
-@include font-face(
-  $name: 'NT Somic',
+  $name: 'Inter',
   $weight: 700,
-  $woff2: '/assets/fonts/NTSomic-Bold.woff2'
+  $woff: '/assets/fonts/Inter-Bold.woff'
+);
+@include font-face(
+  $name: 'Inter',
+  $weight: 600,
+  $woff: '/assets/fonts/Inter-SemiBold.woff'
+);
+@include font-face(
+  $name: 'Inter',
+  $weight: 500,
+  $woff: '/assets/fonts/Inter-Medium.woff'
+);
+@include font-face(
+  $name: 'Inter',
+  $weight: 400,
+  $woff: '/assets/fonts/Inter-Regular.woff'
 );

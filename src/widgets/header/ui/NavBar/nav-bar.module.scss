@@ -1,0 +1,33 @@
+@import 'src/@app/styles/variables';
+@import 'src/@app/styles/mixins';
+
+.nav {
+    display: flex;
+    grid-gap: 24px;
+}
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 4px;
+    text-decoration: none;
+
+    &:hover {
+        svg {
+            
+        }
+        p {
+            color: $primary;
+        }
+    }
+}
+.text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 100%;
+    text-decoration: none;
+    color: $textDark;
+    transition: all .2s;
+    margin: 0;
+    padding: 0;
+}

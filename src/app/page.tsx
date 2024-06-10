@@ -1,9 +1,11 @@
-
+import { Wrapper } from "@shared/ui/Wrapper";
 
 export default function Home() {
   return (
     <main>
-      asdasd
+      <Wrapper>
+        We Market
+      </Wrapper>
     </main>
   );
 }

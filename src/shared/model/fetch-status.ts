@@ -1,1 +1,1 @@
-export type FetchStatus = 'idle' | 'pending' | 'fulfilled' | 'rejected'
+export type FetchStatus = 'normal' | 'pending' | 'fulfilled' | 'rejected'

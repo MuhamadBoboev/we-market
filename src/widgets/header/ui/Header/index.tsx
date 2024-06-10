@@ -1,12 +1,7 @@
-'use client'
-import { HandySvg } from 'handy-svg'
-import classes from './header.module.scss'
+import { Main } from '../Main'
 
 export const Header = () => {
-    return <header>
-        <div>
-            <HandySvg src='/assets/icons/logo.svg' />
-
-        </div>
+    return <header id='header'>
+        <Main />
     </header>
 }

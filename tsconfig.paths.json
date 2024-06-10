@@ -6,6 +6,7 @@
       "@app": ["./src/app/index.ts"],
       "@app/*": ["./src/app/*"],
       "@pages/*": ["./src/pages/*"],
+      "@styles/*": ["./src/@app/styles/*"],
       "@widgets/*": ["./src/widgets/*"],
       "@features/*": ["./src/features/*"],
       "@entities/*": ["./src/entities/*"],
