@@ -1,0 +1,27 @@
+@import 'src/@app/styles/variables';
+@import 'src/@app/styles/mixins';
+
+.section {
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+    -webkit-box-shadow: 0px 1px 12px 0px rgba(30,30,60,0.51);
+    -moz-box-shadow: 0px 1px 12px 0px rgba(30,30,60,0.51);
+    box-shadow: 0px 1px 12px 0px rgba(30,30,60,0.51);
+}
+.wrapper {
+    width: 100%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+.bl_logo {
+    margin-right: 28px;
+}
