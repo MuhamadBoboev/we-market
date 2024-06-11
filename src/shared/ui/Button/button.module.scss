@@ -104,12 +104,13 @@
 
       // secondary-outlined
       &.#{$prefix}bg-secondary {
-        border-color: $white;
-        color: $white;
+        border-color: transparent;
+        color: $primary;
+        background-color: $primaryLight;
 
         &:hover {
-          background: $white;
-          color: $black;
+          background: $primary;
+          color: $white;
         }
 
         &:active {

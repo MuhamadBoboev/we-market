@@ -1,0 +1,20 @@
+@import 'src/@app/styles/variables';
+@import 'src/@app/styles/mixins';
+
+.wrapper {
+    background-color: $gray1;
+}
+.footer {
+    padding: 40px 0;
+}
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link {
+    text-decoration: none;
+    color: $textDark;
+    font-weight: 500;
+    font-size: 20px;
+}
