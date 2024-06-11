@@ -6,13 +6,14 @@ import { NavBar } from '../NavBar'
 import { Search } from '../Search'
 import { Catalog } from '../Catalog'
 import { Wrapper } from '@shared/ui/Wrapper'
+import { PersonStatus } from '../PersonStatus'
 
 export const Main = () => {
     return <div className={classes.section}>
         <Wrapper className={classes.wrapper}>
             <div className={classes.header}>
                 <div className={classes.left}>
-                    <Link href={'/'} className={classes.bl_logo} >
+                    <Link href="/" className={classes.bl_logo} >
                         <HandySvg 
                             src='/assets/icons/logo.svg'
                             width={134}
@@ -29,6 +30,7 @@ export const Main = () => {
                 </div>
                 <div className={classes.right} >
                     <NavBar />
+                    <PersonStatus />
                 </div>
             </div>
     </Wrapper>
