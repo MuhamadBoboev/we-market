@@ -9,30 +9,33 @@ import { Wrapper } from '@shared/ui/Wrapper'
 import { PersonStatus } from '../PersonStatus'
 
 export const Main = () => {
-    return <div className={classes.section}>
-        <Wrapper className={classes.wrapper}>
-            <div className={classes.header}>
-                <div className={classes.left}>
-                    <Link href="/" className={classes.bl_logo} >
-                        <HandySvg 
-                            src='/assets/icons/logo.svg'
-                            width={134}
-                            height={48}
-                            alt={'logo'}
-                            />
-                    </Link>
-                    <div className={classes.catalog} >
-                        <Catalog />
+    return <div>
+        <div className={classes.section}>
+            <Wrapper className={classes.wrapper}>
+                <div className={classes.header}>
+                    <div className={classes.left}>
+                        <Link href="/" className={classes.bl_logo} >
+                            <HandySvg 
+                                src='/assets/icons/logo.svg'
+                                width={134}
+                                height={48}
+                                alt={'logo'}
+                                />
+                        </Link>
+                        <div className={classes.catalog} >
+                            <Catalog />
+                        </div>
+                    </div>
+                    <div className={classes.search} >
+                        <Search />
+                    </div>
+                    <div className={classes.right} >
+                        <NavBar />
+                        <PersonStatus />
                     </div>
                 </div>
-                <div className={classes.search} >
-                    <Search />
-                </div>
-                <div className={classes.right} >
-                    <NavBar />
-                    <PersonStatus />
-                </div>
-            </div>
-    </Wrapper>
+            </Wrapper>
+        </div>
+        <div className={classes.header_top} ></div>
     </div>
 }

@@ -1,0 +1,72 @@
+@import 'src/@app/styles/variables';
+@import 'src/@app/styles/mixins';
+
+.item {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 4px;
+    box-sizing: border-box;
+
+    &:hover {
+        background-color: $gray5;
+        svg {
+            fill: $primary;
+        }
+        .text {
+            color: $primary;
+        }
+    }
+}
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bl_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $gray1;
+    border-radius: 12px;
+    overflow: hidden;
+    min-height: 50px;
+    min-width: 50px;
+
+    img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+}
+
+.bl_text {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    padding: 0 12px;
+}
+
+.text {
+    font-size: 16px;
+    color: $textDark;
+    line-height: 137%;
+    font-weight: 500;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

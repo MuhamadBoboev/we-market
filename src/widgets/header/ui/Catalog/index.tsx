@@ -1,14 +1,16 @@
-'use client'
-import { HandySvg } from 'handy-svg'
+import { useCatalogStore } from '@features/catalog/model/catalogStore'
 import classes from './catalog.module.scss'
-import Link from 'next/link'
-import { NavBar } from '../NavBar'
-import { Search } from '../Search'
 import { Button } from '@shared/ui/Button'
 
 export const Catalog = () => {
+
+    const {toggle} = useCatalogStore((state) => state)
+
     return <div className={classes.catalog}>
-            <Button buttonSize='medium'>
+            <Button 
+                buttonSize='medium'
+                onClick={() => toggle()}
+                >
                 Каталог
             </Button>
     </div>
