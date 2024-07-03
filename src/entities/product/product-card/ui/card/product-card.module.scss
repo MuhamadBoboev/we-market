@@ -1,0 +1,29 @@
+@import 'src/@app/styles/variables';
+@import 'src/@app/styles/mixins';
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    margin: 10px 0;
+}
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    color: $secondary;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 700;
+    color: $textDark;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
+}
