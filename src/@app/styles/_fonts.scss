@@ -1,0 +1,28 @@
+@import 'mixins';
+
+// Inter: 400 & 500 & 700
+@include font-face(
+  $name: 'Inter',
+  $weight: 800,
+  $woff: '/assets/fonts/Inter-ExtraBold.woff'
+);
+@include font-face(
+  $name: 'Inter',
+  $weight: 700,
+  $woff: '/assets/fonts/Inter-Bold.woff'
+);
+@include font-face(
+  $name: 'Inter',
+  $weight: 600,
+  $woff: '/assets/fonts/Inter-SemiBold.woff'
+);
+@include font-face(
+  $name: 'Inter',
+  $weight: 500,
+  $woff: '/assets/fonts/Inter-Medium.woff'
+);
+@include font-face(
+  $name: 'Inter',
+  $weight: 400,
+  $woff: '/assets/fonts/Inter-Regular.woff'
+);
