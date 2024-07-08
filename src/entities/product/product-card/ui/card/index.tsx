@@ -13,9 +13,9 @@ export const Card = ({product, bottomSlot, children}: Props) => {
     return <CardWrapper name={product.name} image={product.image} href={`/product/${product.slug}`} >
         <div className={classes.body} >
             <div className={classes.content}>
-                <h3 className={classes.title} >{product.name}</h3>
+                <h3 className={classes.title} >{product.price}&nbsp;сом</h3>
                 <p className={classes.description} >
-                    {product.description}
+                    {product.name}
                 </p>
             </div>
             {bottomSlot}
