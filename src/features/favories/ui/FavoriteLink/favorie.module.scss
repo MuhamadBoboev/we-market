@@ -1,6 +1,46 @@
 @import 'src/@app/styles/variables';
 @import 'src/@app/styles/mixins';
 
-.button {
-    z-index: 2;
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+}
+.text {
+    font-size: 12px;
+    color: $textDark;
+    margin: 0;
+    margin-top: 5px;
+    line-height: 100%;
+
+    &:hover {
+        color: $primary;
+    }
+}
+.mount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    top: -7px;
+    right: 2px;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    background-color: $primary;
+    color: $white;
+    font-size: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        background-color: darken(red, 10%);
+    };
+    &.active {
+        background-color: darken(red, 10%);
+    };
+
 }

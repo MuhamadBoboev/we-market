@@ -54,7 +54,7 @@ export const productsDate:IProduct[] = [
         website: 'string',
     },
     {
-        id: 1, 
+        id: 3, 
         name: 'Кеды STAN SMITH adidas для проф игроков', 
         price: 250,
         image: '/assets/images/product_3.png', 
@@ -80,7 +80,7 @@ export const productsDate:IProduct[] = [
         website: 'string',
     },    
     {
-        id: 2, 
+        id: 4, 
         name: 'Кеды STAN SMITH adidas для проф игроков', 
         price: 250,
         image: '/assets/images/product_4.png', 
@@ -106,7 +106,7 @@ export const productsDate:IProduct[] = [
         website: 'string',
     },
     {
-        id: 1, 
+        id: 5, 
         name: 'Кеды STAN SMITH adidas для проф игроков', 
         price: 250,
         image: '/assets/images/product_5.png', 
@@ -132,7 +132,7 @@ export const productsDate:IProduct[] = [
         website: 'string',
     },    
     {
-        id: 2, 
+        id: 6, 
         name: 'Кеды STAN SMITH adidas для проф игроков', 
         price: 250,
         image: '/assets/images/product_6.png', 
@@ -158,7 +158,7 @@ export const productsDate:IProduct[] = [
         website: 'string',
     },
     {
-        id: 1, 
+        id: 7, 
         name: 'Кеды STAN SMITH adidas для проф игроков', 
         price: 250,
         image: '/assets/images/product_7.png', 
@@ -184,7 +184,7 @@ export const productsDate:IProduct[] = [
         website: 'string',
     },    
     {
-        id: 2, 
+        id: 8, 
         name: 'Кеды STAN SMITH adidas для проф игроков', 
         price: 250,
         image: '/assets/images/product_8.png', 
@@ -210,7 +210,7 @@ export const productsDate:IProduct[] = [
         website: 'string',
     },
     {
-        id: 1, 
+        id: 9, 
         name: 'Кеды STAN SMITH adidas для проф игроков', 
         price: 250,
         image: '/assets/images/product_9.png', 
@@ -236,7 +236,7 @@ export const productsDate:IProduct[] = [
         website: 'string',
     },    
     {
-        id: 2, 
+        id: 10, 
         name: 'Кеды STAN SMITH adidas для проф игроков', 
         price: 250,
         image: '/assets/images/product_10.png', 
@@ -262,7 +262,7 @@ export const productsDate:IProduct[] = [
         website: 'string',
     },
     {
-        id: 1, 
+        id: 11, 
         name: 'Кеды STAN SMITH adidas для проф игроков', 
         price: 250,
         image: '/assets/images/product_11.png', 
@@ -288,7 +288,7 @@ export const productsDate:IProduct[] = [
         website: 'string',
     },    
     {
-        id: 2, 
+        id: 12, 
         name: 'Кеды STAN SMITH adidas для проф игроков', 
         price: 250,
         image: '/assets/images/product_12.png', 

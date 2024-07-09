@@ -2,20 +2,11 @@
 import { HandySvg } from 'handy-svg'
 import classes from './nav-bar.module.scss'
 import Link from 'next/link'
+import { FavoriteLink } from '@features/favories/ui/FavoriteLink'
 
 export const NavBar = () => {
     return  <div className={classes.nav} >
-                <Link className={classes.link} href={'favorites'} >
-                    <HandySvg 
-                        src='/assets/icons/favorites.svg' 
-                        width={24}
-                        height={24}
-                        alt={'favorites-button'}
-                        />
-                    <p className={classes.text} >
-                        Избранное
-                    </p>
-                </Link>
+                <FavoriteLink />
                 <Link className={classes.link} href={'cart'} >
                     <HandySvg 
                         src='/assets/icons/cart.svg' 

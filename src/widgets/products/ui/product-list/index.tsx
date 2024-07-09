@@ -12,6 +12,6 @@ interface Props {
 
 export const List = () => {
     return <Wrapper>
-        <ProductsList products={productsDate} bottomSlot={<FavoriteButton />} />
+        <ProductsList products={productsDate} bottomSlot={FavoriteButton} />
     </Wrapper>
 }

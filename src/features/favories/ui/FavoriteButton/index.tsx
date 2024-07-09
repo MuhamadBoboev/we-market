@@ -4,16 +4,17 @@ import classes from './favorie.module.scss'
 import useFavoriteStore from "../../model/favoriteSlice"
 import toast from "react-hot-toast";
 
-interface FavoriteButtonProps {
-    id: number;
-}       
-export const FavoriteButton = ({id}:FavoriteButtonProps) => {
+
+export const FavoriteButton = ({id}: {id: number}) => {
     const { toggleFavorite, isFavorite } = useFavoriteStore((state) => state);
 
     const handleToggleFavorite = () => {
         toggleFavorite(id);
-        console.log(isFavorite(id))
-        // toast.success('Успешно добавлено!')
+        if(isFavorite(id)) {
+            toast.success('Успешно добавлено!')
+        } else {
+            toast.error('Успешно удалено!')
+        }
     };
 
     return <Button 
@@ -23,6 +24,6 @@ export const FavoriteButton = ({id}:FavoriteButtonProps) => {
             fullWidth
             onClick={handleToggleFavorite}
             >
-                {isFavorite(id) ? 'Удалить из избранного' : 'Добавить в избранное'}
+                {isFavorite(id) ? 'Удалить' : 'Добавить'}
     </Button>
 }

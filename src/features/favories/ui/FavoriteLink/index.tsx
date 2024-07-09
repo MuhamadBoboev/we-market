@@ -2,25 +2,24 @@
 import { Button } from "@shared/ui/Button"
 import classes from './favorie.module.scss'
 import useFavoriteStore from "../../model/favoriteSlice"
+import Link from "next/link";
+import { HandySvg } from "handy-svg";
 
-interface FavoriteLinkProps {
-    id: number;
-}       
-export const FavoriteLink = ({id}:FavoriteLinkProps) => {
-    const { toggleFavorite, isFavorite } = useFavoriteStore((state) => state);
+export const FavoriteLink = () => {
+    const { favorites } = useFavoriteStore((state) => state);
 
-    const handleToggleFavorite = () => {
-        toggleFavorite(id);
-        // toast.success('Успешно добавлено!')
-    };
-    console.log(isFavorite)
-    return <Button 
-            className={classes.button}
-            variant="outlined" 
-            bg='secondary' 
-            fullWidth
-            onClick={handleToggleFavorite}
-            >
-                {isFavorite(id) ? 'Удалить из избранного' : 'Добавить в избранное'}
-    </Button>
+    return <Link className={classes.link} href={'favorites'} >
+        <HandySvg 
+            src='/assets/icons/favorites.svg' 
+            width={24}
+            height={24}
+            alt={'favorites-button'}
+            />
+        <p className={classes.text} >
+            Избранное
+        </p>
+        {favorites.length > 0 && <div className={classes.mount} >
+            {favorites.length}
+        </div>}
+    </Link>
 }
