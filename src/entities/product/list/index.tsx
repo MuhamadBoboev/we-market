@@ -1,16 +1,16 @@
 import classes from './product-list.module.scss'
 import { IProduct } from '@entities/product/product-card/model/Product'
 import { ProductCard } from '@entities/product/product-card/ui'
-import { ReactNode } from 'react'
+import { FC, ReactNode } from 'react'
 
 
 interface Props {
     products: IProduct[]
-    bottomSlot?: ReactNode 
+    bottomSlot?: FC<{id: number}> 
 }
 
-export const List = ({products, bottomSlot}: Props) => {
+export const List = ({products, bottomSlot: FavoriteButton}: Props) => {
     return <ul className={classes.items} >
-            {products.map((product) =>  <ProductCard key={product.id} product={product} bottomSlot={bottomSlot} />)}
+            {products.map((product) =>  <ProductCard key={product.id} product={product} bottomSlot={FavoriteButton && <FavoriteButton id={product.id}/>} />)}
         </ul>
 }
