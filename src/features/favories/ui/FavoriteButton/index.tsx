@@ -18,9 +18,7 @@ export const FavoriteButton = ({id}: {id: number}) => {
     };
 
     return <Button 
-            className={classes.button}
-            variant="outlined" 
-            bg='secondary' 
+            className={classes.button}            
             fullWidth
             onClick={handleToggleFavorite}
             >

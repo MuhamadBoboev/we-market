@@ -6,7 +6,7 @@ import { Button } from '@shared/ui/Button'
 
 export const PersonStatus = () => {
     return  <div className={classes.wrapper} >
-                <Button variant='outlined' bg='secondary' buttonSize='small'>
+                <Button buttonSize='small'>
                     Авторизоваться
                 </Button>
             </div>
