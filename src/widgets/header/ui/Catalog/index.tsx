@@ -8,7 +8,6 @@ export const Catalog = () => {
 
     return <div className={classes.catalog}>
             <Button 
-                buttonSize='medium'
                 onClick={() => toggle()}
                 >
                 Каталог
