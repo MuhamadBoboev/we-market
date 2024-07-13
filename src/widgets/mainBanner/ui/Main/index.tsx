@@ -1,5 +1,5 @@
 'use client'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -10,74 +10,50 @@ import { Wrapper } from '@shared/ui/Wrapper';
 import SliderNav from '@shared/ui/SliderNav/SliderNav';
 import clsx from 'clsx';
 import Image from 'next/image';
+import { bannerData } from '@widgets/mainBanner/const/bannerData';
 
 export const Main = () => {
   return  <Wrapper className={classes.wrapper}>
       <div className={classes.body} >
         <Swiper
-        effect={'coverflow'}
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={20}
-        slidesPerView={1.2}
-        className={classes.swiper}
-        pagination={{
-          enabled: true,
-          clickable: true,
-          el: '#gallery-pagination',
-          bulletClass: 'slider-custom-pagination-bullet',
-          bulletActiveClass: 'slider-custom-pagination-bullet-active',
-        }}
-        navigation={{
-          enabled: true,
-          nextEl: '#gallery-nav-next',
-          prevEl: '#gallery-nav-prev',
-        }}
-        centeredSlides={true}
-      >
-        <SwiperSlide className={classes.slide}>
-          <div className={classes.bl_img} >
-            <Image 
-              className={classes.img}
-              src='/assets/images/banners/banner-1.png'
-              width={1030}
-              height={360}
-              alt='banner'
-              />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className={classes.slide}>
-          <div className={classes.bl_img} >
-            <Image 
-              className={classes.img}
-              src='/assets/images/banners/banner-1.png'
-              width={1030}
-              height={360}
-              alt='banner'
-              />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className={classes.slide}>
-          <div className={classes.bl_img} >
-            <Image 
-              className={classes.img}
-              src='/assets/images/banners/banner-1.png'
-              width={1030}
-              height={360}
-              alt='banner'
-              />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className={classes.slide}>
-          <div className={classes.bl_img} >
-            <Image 
-              className={classes.img}
-              src='/assets/images/banners/banner-1.png'
-              width={1030}
-              height={360}
-              alt='banner'
-              />
-          </div>
-        </SwiperSlide>
+          effect={'coverflow'}
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+          spaceBetween={20}
+          slidesPerView={1.2}
+          className={classes.swiper}
+          pagination={{
+            enabled: true,
+            clickable: true,
+            el: '#gallery-pagination',
+            bulletClass: 'slider-custom-pagination-bullet',
+            bulletActiveClass: 'slider-custom-pagination-bullet-active',
+          }}
+          navigation={{
+            enabled: true,
+            nextEl: '#gallery-nav-next',
+            prevEl: '#gallery-nav-prev',
+          }}
+          centeredSlides={true}
+          autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+          }}
+          speed={1000}
+          loop={true}
+        >
+          {bannerData.map((banner, index) => 
+                  <SwiperSlide key={index} className={classes.slide}>
+                    <div className={classes.bl_img} >
+                      <Image 
+                        className={classes.img}
+                        src='/assets/images/banners/banner-1.png'
+                        width={1030}
+                        height={360}
+                        alt='banner'
+                        />
+                    </div>
+                </SwiperSlide>
+          )}
       </Swiper>
         <div className={classes.Navigation} >
 					<SliderNav  

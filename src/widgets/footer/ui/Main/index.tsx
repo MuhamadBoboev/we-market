@@ -9,12 +9,14 @@ export const Main = () => {
             <Wrapper>
             <div className={classes.footer} >
                 <div className={classes.left} >
-                    <HandySvg 
-                        src="/assets/icons/logo.svg" 
-                        width={134}
-                        height={48}
-                        alt="logo"
-                    />
+                    <Link href={'/'} >
+                        <HandySvg 
+                            src="/assets/icons/logo.svg" 
+                            width={134}
+                            height={48}
+                            alt="logo"
+                        />
+                    </Link>
                     <Link className={classes.link} href={'tel:+992919239212'}>
                         Нужны помощь: +992 919 23 92 12
                     </Link>
